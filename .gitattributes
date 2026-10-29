@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve Unix line endings for shell launchers and bash scripts across OS checkouts
+*.sh text eol=lf
+.github/skills/impeccable/scripts/impeccable text eol=lf
+
+# Preserve Windows line endings for batch scripts
+*.cmd text eol=crlf
+*.bat text eol=crlf

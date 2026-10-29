@@ -68,6 +68,14 @@ hooks:
     prompt: Commit outstanding changes before analysis?
     description: Auto-commit before analysis
     condition: null
+  before_converge:
+  - extension: git
+    command: speckit.git.commit
+    enabled: true
+    optional: true
+    prompt: Commit outstanding changes before convergence check?
+    description: Auto-commit before convergence assessment
+    condition: null
   before_taskstoissues:
   - extension: git
     command: speckit.git.commit
@@ -153,6 +161,14 @@ hooks:
     optional: true
     prompt: Commit analysis results?
     description: Auto-commit after analysis
+    condition: null
+  after_converge:
+  - extension: git
+    command: speckit.git.commit
+    enabled: true
+    optional: true
+    prompt: Commit appended convergence tasks?
+    description: Auto-commit after convergence assessment
     condition: null
   after_taskstoissues:
   - extension: git

@@ -24,3 +24,9 @@ backend/uploads/
 # Editor/OS
 .DS_Store
 Thumbs.db
+
+# Agent skill local working/runtime state (keep shared configs & skills tracked)
+.taste-skill/
+.impeccable/config.local.json
+.impeccable/build/
+.impeccable/review/
